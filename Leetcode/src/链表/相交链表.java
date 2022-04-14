@@ -28,7 +28,7 @@ public class 相交链表 {
         while (lengthDifference--!=0){
             curL=curL.next;
         }
-        while (curL!=null&&curS!=null){
+        while (curL!=null||curS!=null){
             if(curL==curS){
                 return curL;
             }
