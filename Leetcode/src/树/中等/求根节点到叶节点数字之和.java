@@ -1,5 +1,7 @@
 package 树.中等;
 
+import 树.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 /**
@@ -20,18 +22,6 @@ import java.util.LinkedList;
 //链接：https://leetcode-cn.com/problems/sum-root-to-leaf-numbers
 
 public class 求根节点到叶节点数字之和 {
-      public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
     public int sumNumbers(TreeNode root) {
 //        if(root==null){
 //            return 0;

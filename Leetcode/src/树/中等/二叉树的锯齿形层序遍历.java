@@ -1,5 +1,7 @@
 package 树.中等;
 
+import 树.TreeNode;
+
 import java.util.*;
 
 /**
@@ -11,18 +13,6 @@ import java.util.*;
 //输入：root = [3,9,20,null,null,15,7]
 //输出：[[3],[20,9],[15,7]]
 public class 二叉树的锯齿形层序遍历 {
-      public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new LinkedList<List<Integer>>();
         if (root == null) {
