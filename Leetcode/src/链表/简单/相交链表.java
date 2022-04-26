@@ -1,4 +1,6 @@
-package 链表;
+package 链表.简单;
+
+import 链表.ListNode;
 
 /**
  * @author Doromv
@@ -8,15 +10,6 @@ package 链表;
 // 请你找出并返回两个单链表相交的起始节点。
 // 如果两个链表不存在相交节点，返回 null 。
 public class 相交链表 {
-
-    public class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) {
-         val = x;
-         next = null;
-     }
- }
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int lengthA=getListNodeLength(headA);
         int lengthB=getListNodeLength(headB);

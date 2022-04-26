@@ -1,4 +1,6 @@
-package 链表;
+package 链表.困难;
+
+import 链表.ListNode;
 
 /**
  * @author Doromv
@@ -11,13 +13,6 @@ package 链表;
 //如果节点总数不是k的整数倍，那么请将最后剩余的节点保持原有顺序。
 
 public class K个一组翻转链表 {
-    public class ListNode {
-      int val;
-      ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-  }
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode start=head;
         ListNode lastNode = lastNode(start, k);
